@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Nanum+Myeongjo&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("Pic3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+    background: linear-gradient(to top right, #000000b9, #00000000);
+    position: absolute;
+    height: 550px;
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 20px 30px 30px;
+    border: 2px solid rgb(0, 0, 0);
+    flex-direction: column;
+    line-height: 20px;
+}
+
+img {
+    display: block;
+    height: 200px;
+    width: 170px;
+    border-radius: 100%;
+    margin: 20px 0px;
+    border: 3px solid black;
+}
+
+img:hover {
+    transform: rotate(360deg);
+    transition-duration: 1.5s;
+}
+
+.info {
+    flex-direction: column;
+    color: white;
+    display: block;
+}
+
+p1 {
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+p2 {
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px 0px 10px;
+}
+
+p3 {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 25px 0px 25px;
+}
+
+.info:hover {
+    font-size: 36px;
+}
+.links {
+    margin: 10px 20px 3px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    padding: 15px;
+}
+
+.iimg {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#e9eaf3;
+    font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+    background-color: #e9eaf3;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 600px;
+    width: 300px;
+    box-shadow: 1px 1px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    width: 275px;
+    align-self: center;
+    opacity: 0.5;
+    height: 3px;
+    background-color: #93a1d1;
+}
+
+.top {
+    display: flex;
+    margin: 13px 0px 15px 0px;
+    vertical-align: middle;
+}
+ 
+.personal{
+    margin-top: 10px;
+}
+
+.faq {
+    margin-top: 10px;
+}
+
+.loca {
+    margin-bottom: 10px;
+}
+.top, .personal, .notif, 
+.loca, .faq, .set {
+    padding: 10px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#me {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    margin: 0px 15px 0px 0px;
+}
+
+#arrow {
+    float: right;
+}
+
+.task {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 15px 0px;
+    opacity: .5;
+}
+
+#swar {
+    font-weight: 300;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+#eng {
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(93, 90, 94);
+}
+

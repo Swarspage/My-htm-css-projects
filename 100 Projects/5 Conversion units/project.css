@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Satisfy&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Satisfy", cursive;
+  color: white;
+  font-weight: 500;
+  background-image: url("wallpaperflare.com_wallpaper\ \(2\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+h1 {
+  margin-top: 50px;
+  font-size: xxx-large;
+}
+.divisions > ul {
+  display: flex;
+}
+.divisions {
+  width: 100%;
+  display: flex;
+  align-content: space-between;
+  align-items: flex-end;
+}
