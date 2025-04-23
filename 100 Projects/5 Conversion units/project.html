@@ -7,33 +7,76 @@
     <link rel="stylesheet" href="project.css" />
   </head>
   <body>
-    <h1><center>Unit conversions...</center></h1>
-    <div class="divisions">
+    <nav class="navbar">
       <ul>
-        <li>Lenght</li>
-        <li>Temprature</li>
-        <li>Area</li>
-        <li>Volume</li>
+        <li>ConvertionWeb</li>
+        <li>Length</li>
         <li>Weight</li>
+        <li>Temprature</li>
+        <li>Speed</li>
+        <li>Volume</li>
         <li>Time</li>
       </ul>
-    </div>
-    <section>
-      <div class="convertorbox">
-        <div class="from">
-          From:
-          <select name="dropdwn">
-            <option value="mm">mm</option>
-            <option value="km">Km</option>
-          </select>
+    </nav>
+    <div class="container">
+      <div class="conversionBoxes">
+        <p>Length Conversion</p>
+        <br /><br />
+        <div class="length">
+          <div class="from">
+            <p>From: <br /></p>
+            <input class="fromInput" type="number" /><br />
+            <select id="lengthUnit" name="lengthUnit">
+              <option value="mm">Millimeter (mm)</option>
+              <option value="cm">Centimeter (cm)</option>
+              <option value="m">Meter (m)</option>
+              <option value="km">Kilometer (km)</option>
+              <option value="in">Inch (in)</option>
+              <option value="ft">Foot (ft)</option>
+              <option value="yd">Yard (yd)</option>
+              <option value="mi">Mile (mi)</option>
+              <option value="nmi">Nautical Mile</option>
+              <option value="fathom">Fathom</option>
+              <option value="au">Astronomical Unit (AU)</option>
+              <option value="ly">Light Year</option>
+              <option value="parsec">Parsec</option>
+              <option value="angstrom">Angstrom (Å)</option>
+              <option value="micron">Micron (μm)</option>
+              <option value="nm">Nanometer (nm)</option>
+              <option value="planck">Planck Length</option>
+              <option value="cubit">Cubit</option>
+              <option value="league">League</option>
+            </select>
+          </div>
+          <div class="to">
+            <p>To: <br /></p>
+            <input class="toInput" /><br />
+            <select id="lengthUnit" name="lengthUnit">
+              <option value="mm">Millimeter (mm)</option>
+              <option value="cm">Centimeter (cm)</option>
+              <option value="m">Meter (m)</option>
+              <option value="km">Kilometer (km)</option>
+              <option value="in">Inch (in)</option>
+              <option value="ft">Foot (ft)</option>
+              <option value="yd">Yard (yd)</option>
+              <option value="mi">Mile (mi)</option>
+              <option value="nmi">Nautical Mile</option>
+              <option value="fathom">Fathom</option>
+              <option value="au">Astronomical Unit (AU)</option>
+              <option value="ly">Light Year</option>
+              <option value="parsec">Parsec</option>
+              <option value="angstrom">Angstrom (Å)</option>
+              <option value="micron">Micron (μm)</option>
+              <option value="nm">Nanometer (nm)</option>
+              <option value="planck">Planck Length</option>
+              <option value="cubit">Cubit</option>
+              <option value="league">League</option>
+            </select>
+          </div>
         </div>
-        <div class="to"></div>
+        <div class="convert"><button>Convert</button></div>
       </div>
-    </section>
-    <aside>
-      <div class="formulabox">
-        <p id="formula">:)</p>
-      </div>
-    </aside>
+    </div>
+    <script src="project.js"></script>
   </body>
 </html>

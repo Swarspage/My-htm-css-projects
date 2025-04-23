@@ -1,29 +1,145 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Satisfy&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+:root {
+  /* Main Colors */
+  --bg-primary: #1e2126;
+  --accent-primary: #4a8cff;
+  --accent-secondary: #7c5dfa;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b9c5;
+  --input-bg: #2d343c;
+  --border-color: #3a4049;
+
+  /* Status Colors */
+  --success: #4caf50;
+  --error: #f44336;
+  --warning: #ffc107;
+}
+
+.navbar {
+  color: #ced4da;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 50px 20px 50px;
+}
+
+.navbar > ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar > ul > li {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: large;
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background-color 0.6s ease, box-shadow 0.8s ease;
+}
+.navbar > ul > li:hover {
+  transform: translateY(-5px);
+}
+
+.navbar > ul > li:hover {
+  cursor: pointer;
+}
+
+.container {
+  padding: 40px;
+  color: #ced4da;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.conversionBoxes {
+  text-align: center;
+  overflow: auto;
+}
+.conversionBoxes > p {
+  font-size: xx-large;
+}
+
+.length {
+  display: flex;
+
+  border-radius: 30px;
+  overflow: auto;
+}
+
+.to,
+.from {
+  text-align: left;
+  padding: 20px;
+  margin: 50px;
+}
+.to > p,
+.from > p {
+  padding: 20px 0px 20px 0px;
+}
+.to > input,
+.from > input,
+.from > select,
+.to > select {
+  border: #3a4049 solid 2px;
+  background-color: #2d343c;
+  color: white;
+  border-radius: 20px;
+  height: 40px;
+  padding: 10px;
+  font-weight: 900;
+}
+
+.fromInput,
+.toInput,
+.to > select,
+.from > select {
+  margin: 20px 0px 20px 0px;
+}
+
+.convert > button {
+  height: 40px;
+  width: 300px;
+  background-color: #1e2126;
+  color: white;
+  border: var(--border-color);
+  border-radius: 30px;
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background-color 0.6s ease, box-shadow 0.8s ease;
+  transform: translateY(0);
+}
+.convert > button:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  transform: translateY(-5px);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
 }
 body {
-  font-family: "Satisfy", cursive;
-  color: white;
-  font-weight: 500;
-  background-image: url("wallpaperflare.com_wallpaper\ \(2\).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background: linear-gradient(
+    -45deg,
+    #1e2126,
+    #2d343c,
+    #3a4049,
+    rgb(135, 166, 219)
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
-h1 {
-  margin-top: 50px;
-  font-size: xxx-large;
-}
-.divisions > ul {
-  display: flex;
-}
-.divisions {
-  width: 100%;
-  display: flex;
-  align-content: space-between;
-  align-items: flex-end;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
